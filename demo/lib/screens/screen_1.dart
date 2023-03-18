@@ -14,21 +14,24 @@ class ScreenOne extends StatelessWidget {
           const Text('Screen 1'),
           ElevatedButton(
               onPressed: () {
-                 showDialog(
-                                  context: context,
-                                  builder: (context) {
-                                    return AlertDialog(
-                                      title: const Text('Errorrrrr'),
-                                      actions: [IconButton(onPressed: (){}, icon: const Icon(Icons.add))],
-                                    );
-                                  });
+                showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        title: const Text('Errorrrrr'),
+                        actions: [
+                          IconButton(
+                              onPressed: () {}, icon: const Icon(Icons.add))
+                        ],
+                      );
+                    });
                 // Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
                 //   return ScreenTwo();
                 // }));
                 // Navigator.of(context).pushNamed('second_screen');
                 // ElevatedButton(
                 //             onPressed: () {
-                             
+
                 //             },
                 //             child: Text('Clickme'));
               },

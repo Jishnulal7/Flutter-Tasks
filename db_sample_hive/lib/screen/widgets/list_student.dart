@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
@@ -20,6 +21,7 @@ class ListStudent extends StatelessWidget {
               return ListTile(
                 title: Text(data.name),
                 subtitle: Text(data.age),
+                trailing: Icon(Icons.edit),
               );
             },
             separatorBuilder: (context, index) {
