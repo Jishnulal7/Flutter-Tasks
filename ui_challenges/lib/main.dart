@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tasks/screens/first_page.dart';
-import 'package:flutter_tasks/screens/second_page.dart';
 
+import 'screens/inspiration.dart';
 
 void main() {
-   runApp( const MyApp());
+  runApp(const MyApp());
+  
 }
 
 class MyApp extends StatelessWidget {
@@ -13,8 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: SecondPage(),
-      debugShowCheckedModeBanner: false,
+      home : InspirationUi(),
+      debugShowCheckedModeBanner:false 
+      ,
     );
   }
 }
+

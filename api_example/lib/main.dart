@@ -1,3 +1,4 @@
+import 'package:api_example/users_view.dart';
 import 'package:flutter/material.dart';
 
 import 'home_screen.dart';
@@ -12,7 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+
+      routes: {
+        "/":(context) => HomeScreen(),
+       "/home":(context) => HomeScreen(),
+       '/userview':(context) => const ViewUsers()
+      },
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:api_example/users_view.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 
@@ -57,8 +58,22 @@ class HomeScreen extends StatelessWidget {
                     ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(content: Text('All fields required')));
                   }
+                  Navigator.push(
+                    context,MaterialPageRoute(builder: (_)=>ViewUsers())
+                  );
                 },
-                child: const Text('Submit'))
+                child: const Text('Submit')),
+            // ListView.separated(
+            //   itemBuilder: (context, index) {
+            //     return const ListTile(
+
+            //     );
+
+            //   },itemCount: 2,
+            //   separatorBuilder: (context, index) {
+            //     return const Divider();
+            //   },
+            // )
           ],
         ),
       ),
