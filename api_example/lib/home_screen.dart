@@ -63,17 +63,6 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 child: const Text('Submit')),
-            // ListView.separated(
-            //   itemBuilder: (context, index) {
-            //     return const ListTile(
-
-            //     );
-
-            //   },itemCount: 2,
-            //   separatorBuilder: (context, index) {
-            //     return const Divider();
-            //   },
-            // )
           ],
         ),
       ),
