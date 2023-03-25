@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       routes: {
-        "/":(context) => HomeScreen(),
-       "/home":(context) => HomeScreen(),
-       '/userview':(context) => const ViewUsers()
+        "/":(context) => const ViewUsers(),
+       "/home":(context) => const ViewUsers(),
+       '/userview':(context) =>  const ViewUsers()
       },
     );
   }

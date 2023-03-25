@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   var emailController = TextEditingController();
 
   Future<void> sendData() async {
-    var data = {'name': textController.text, 'email': emailController.text};
+    var data = {'name': textController.text.trim(), 'email': emailController.text.trim()};
 
     var response = await post(
         Uri.parse(
@@ -58,9 +58,8 @@ class HomeScreen extends StatelessWidget {
                     ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(content: Text('All fields required')));
                   }
-                  Navigator.push(
-                    context,MaterialPageRoute(builder: (_)=>ViewUsers())
-                  );
+                  // Navigator.push(
+                  //     context, MaterialPageRoute(builder: (_) => ViewUsers()));
                 },
                 child: const Text('Submit')),
           ],
