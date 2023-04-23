@@ -11,9 +11,10 @@ class ViewUsers extends StatefulWidget {
 }
 
 class _ViewUsersState extends State<ViewUsers> {
+  
   Future<dynamic> getData() async {
     var response =
-        await get(Uri.parse('http://192.168.1.16/api_demo/view.php'));
+        await get(Uri.parse('http://192.168.1.54/api_demo/view.php'));
     if (jsonDecode(response.body)[0]['result'] == 'success') {
       return jsonDecode(response.body);
     } else {

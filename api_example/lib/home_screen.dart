@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+// ignore: unused_import
 import 'package:api_example/users_view.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
@@ -15,7 +16,7 @@ class HomeScreen extends StatelessWidget {
 
     var response = await post(
         Uri.parse(
-          'http://192.168.1.4/api_demo/insert.php',
+          'http://192.168.1.54/api_demo/insert.php',
         ),
         body: data);
     print(response.body);

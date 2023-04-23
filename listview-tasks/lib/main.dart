@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return   MaterialApp(
       // home: MarioListView(),
-      home: ListorGrid(),
+      home: SimpleContactList(),
       theme: ThemeData(primaryColor: Colors.deepPurple),
       debugShowCheckedModeBanner: false,
     );
